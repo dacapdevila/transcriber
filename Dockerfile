@@ -13,4 +13,5 @@ COPY transcribe_and_translate.py .
 # Instalar paquetes de Python
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "transcribe_and_translate.py"]
+#CMD ["python", "transcribe_and_translate.py"]
+ENTRYPOINT ["python", "batch_transcribe.py"]
